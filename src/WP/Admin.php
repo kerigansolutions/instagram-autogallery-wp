@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Instagram\WP;
+namespace KeriganSolutions\Instagram\WP;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
