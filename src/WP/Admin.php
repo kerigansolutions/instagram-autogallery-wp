@@ -44,7 +44,7 @@ class Admin {
   public function addMenus()
   {
     add_menu_page("Instagram Settings", "Instagram Settings", "administrator", 'kma-instagram', function () {
-      include(wp_normalize_path( dirname(dirname(__FILE__)) . '/dist/AdminOverview.php'));
+      include(wp_normalize_path( dirname(dirname(dirname(__FILE__))) . '/dist/AdminOverview.php'));
     }, "dashicons-admin-generic");
   }
 

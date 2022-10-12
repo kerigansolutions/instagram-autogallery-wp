@@ -14,10 +14,9 @@ const mix = require("laravel-mix")
 mix
   .setResourceRoot("../")
   .setPublicPath("./dist")
-  .postCss("resources/styles/instagram-admin.css", "styles", [
+  .postCss("resources/styles/instagram-admin.css", "", [
     require("tailwindcss"),
     require("autoprefixer"),
   ])
-  .js("resources/scripts/instagram-admin.js", "scripts")
+  .js("resources/scripts/instagram-admin.js", "")
   .vue()
-  .sourceMaps()

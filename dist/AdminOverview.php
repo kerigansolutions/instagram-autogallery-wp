@@ -25,7 +25,7 @@ if (isset($_POST['instagram_secret_settings']) && $_POST['instagram_secret_setti
 }
 
 ?>
-<link href="styles/instagram-admin.css" rel="stylesheet">
+<link href="/styles/instagram-admin.css" rel="stylesheet">
 <div id="kma-instagram-settings" class="text-base" style="margin-left:-20px;">
   <div class="p-8 lg:p-12">
     <h1 class="font-bold text-xl lg:text-4xl text-primary">
@@ -135,7 +135,7 @@ if (isset($_POST['instagram_secret_settings']) && $_POST['instagram_secret_setti
     </div>
   </div>
 </div>
-<script src="scripts/instagram-admin.js" ></script>
+<script src="/scripts/instagram-admin.js" ></script>
 <script>
   window.fbAsyncInit = function () {
     FB.init({
