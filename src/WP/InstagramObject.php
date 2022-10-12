@@ -239,7 +239,7 @@ class InstagramObject {
     add_action( 'init', [$this,'createPostType'], 50 );
     add_shortcode( $this->shortcode, 'shortcodeFunction' );
 
-    // $this->cron();
+    $this->cron();
   }
 
 }
