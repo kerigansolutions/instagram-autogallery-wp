@@ -1,7 +1,6 @@
 <?php
 
-// use KeriganSolutions\Instagram\WP\Admin;
-use App\Services\Instagram\WP\Admin;
+use KeriganSolutions\Instagram\WP\Admin;
 
 $instagram = new Admin();
 
