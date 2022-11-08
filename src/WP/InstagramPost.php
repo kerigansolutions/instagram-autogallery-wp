@@ -20,6 +20,7 @@ class InstagramPost extends InstagramObject {
     $post->media_type = get_post_meta($post->ID, 'media_type', true);
     $post->media_url = get_post_meta($post->ID, 'media_url', true);
     $post->permalink = get_post_meta($post->ID, 'permalink', true);
+    $post->thumbnail_url = get_post_meta($post->ID, 'thumbnail_url', true);
     $post->timestamp = get_post_meta($post->ID, 'timestamp', true);
     $post->username = get_post_meta($post->ID, 'username', true);
 
@@ -43,6 +44,7 @@ class InstagramPost extends InstagramObject {
         'media_type' => isset($input->media_type) ? $input->media_type : '',
         'media_url' => isset($input->media_url) ? $input->media_url : '',
         'permalink' => isset($input->permalink) ? $input->permalink : '',
+        'thumbnail_url' => isset($input->thumbnail_url) ? $input->thumbnail_url : '',
         'timestamp' => isset($input->timestamp) ? $input->timestamp : '',
         'username' => isset($input->username) ? $input->username : '',
       ]
