@@ -67,7 +67,7 @@ class InstagramObject {
   public function sync ($request)
   {
     $num = $request->get_param('num');
-    $this->getRemote($num ?? 30);
+    $this->getRemote($num ?? 36);
   }
 
   /**
@@ -92,7 +92,7 @@ class InstagramObject {
    * Contact Facebook's Graph API utilizing our composer package
    * for all the heavy lifting.
    */
-  public function getRemote ($num = 12)
+  public function getRemote ($num = 36)
   {
     $client = new Client();
 
